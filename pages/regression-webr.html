@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regression WebR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/regression.css">
+</head>
+
+<body>
+  <!-- নেভবার -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="#home">VegieHat</a>
+      </div>
+
+      <!-- হ্যামবার্গার বাটন -->
+      <button class="hamburger" title="nav-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="../index.html">হোম</a></li>
+        <li><a href="#" class="active">Regression</a></li>
+        <li><a href="#portfolio">পোর্টফোলিও</a></li>
+        <li><a href="#about">আমাদের সম্পর্কে</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Regression Form -->
+  <section class="regression-form" style="margin-top: 100px;">
+    
+      <div class="container">
+          <form class="contact-form regression-form">
+              <fieldset>
+                  <legend>রিগ্রেশন প্যারামিটার</legend>
+                  <div class="form-group">
+                      <label for="k-value">k এর মান:</label>
+                      <input type="number" id="k-value" placeholder="যেমন: 5" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="n-value">n এর মান:</label>
+                      <input type="number" id="n-value" placeholder="যেমন: 100" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="sigma-value">σ² এর মান:</label>
+                      <input type="number" id="sigma-value" placeholder="যেমন: 1.5" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="outlier-count">আউটলায়ারের সংখ্যা:</label>
+                      <input type="number" id="outlier-count" placeholder="যেমন: 3" required>
+                  </div>
+                  <button type="button" id="generate-regression" class="btn btn-primary">জেনারেট করুন</button>
+              </fieldset>
+              <div id="webr-status">
+                <p>WebR initializing...</p>
+              </div>
+          </form>
+      </div>
+  </section>
+
+  <script src="../scripts/main.js"></script>
+  <script type="module" src="../scripts/regression.js"></script>
+</body>
+
+</html>

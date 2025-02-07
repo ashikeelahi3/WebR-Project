@@ -1,0 +1,108 @@
+/* ফর্ম ফিল্ডসেট এবং লেজেন্ড স্টাইল */
+fieldset {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* রিগ্রেশন ফর্ম স্টাইল */
+.regression-form {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.regression-form fieldset {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.regression-form legend {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.regression-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.regression-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.regression-form input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 
+      inset 0 2px 4px rgba(0, 0, 0, 0.05),
+      0 0 0 3px rgba(44, 62, 80, 0.1);
+  outline: none;
+}
+
+.regression-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.regression-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.regression-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
