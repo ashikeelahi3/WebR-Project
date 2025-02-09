@@ -14,4 +14,5 @@ sd <- runif(k, 1, 3)
 
 X <- rmvtnorm(n, mean = mean, sigma = sd)
 print(X)
+print(X)
 
