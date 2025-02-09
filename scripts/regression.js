@@ -42,10 +42,18 @@ async function generatePlot() {
   statusElement.textContent = 'Generating Plot, Please wait...';
   statusElement.style.color = "green";
 
+  try {
+
+  } catch (error) {
+    console.error("Error generating plot:", error);
+    statusElement.textContent = "Error generating plot";
+    statusElement.style.color = "red";
+  }
 }
 
 
 const generateRegression = document.getElementById("generate-regression")
+
 generateRegression.addEventListener("click", async () => {
   if (!packagesInstalled) {
     statusElement.textContent = "Please wait for package installation";
